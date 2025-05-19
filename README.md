@@ -1,4 +1,4 @@
-# Betting Strategy AI - Unit Test Report
+# Betting Strategy - Unit Test Report
 
 이 프로젝트는 Q-learning 기반 축구 경기 스코어 배팅 프로그램입니다.  
 Python으로 작성된 주요 로직에 대해 `unittest`와 `unittest.mock`을 활용하여 단위 테스트를 수행하였습니다.
@@ -62,5 +62,5 @@ my_betting_project/
 
 ## 비고
 
-- 학습된 Q값이 없는 경우에도 프로그램이 graceful하게 동작하는지 확인
-- 실시간 사용자 입력 등은 테스트 범위에서 제외하고 로직 중심 테스트 진행
+- Q-table이 비어 있거나 아직 학습이 안 된 경우에도, 프로그램이 멈추지 않고 정상적으로 실행되도록 처리
+- 테스트 코드는 사용자 입력(`input()`)이 필요한 부분은 제외하고, 계산이나 로직 중심 함수들만 테스트하도록 구성
